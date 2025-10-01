@@ -8,33 +8,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Hi, I'm <span className="purple">Bachar Bouguerra Zina</span> from{" "}
+            <span className="purple">Tunis</span>—an Instrumentation and Maintenance Engineer in
+            training who'd rather calibrate neural nets than pressure valves.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I have recently worked on AI/ML projects like an <b>LLM-powered virtual assistant</b> for Odoo, and
+            <b> NLP-based chatbots</b> with Rasa.
+            <br />
+            <br />
+            When the cursor isn't blinking I'm usually:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Scraping public datasets to see what actually trains.
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> 24-hour hackathons—because sleep is just an
+              under-regularized parameter
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Gym, football, running—anything that keeps the step-count higher than the screen-time.
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(123 163 192)" }}>
+            "If it compiles on the first try, it probably isn't interesting."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">محمد العابد</footer>
         </blockquote>
       </Card.Body>
     </Card>
