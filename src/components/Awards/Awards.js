@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import Particle from "../Particle";
 import ProjectCard from "../Projects/ProjectCards.js";
 import awardImage1 from "../../Assets/Projects/car-finder.png";
