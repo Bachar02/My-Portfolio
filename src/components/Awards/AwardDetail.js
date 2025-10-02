@@ -1,8 +1,14 @@
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import awardImage1 from "../../Assets/Projects/car-finder.png";
+import awardOrbit0 from "../../Assets/orbit_pic.png";
 import awardNrtf1 from "../../Assets/nrtf1.png";
-import awardNrtf2 from "../../Assets/nrtf2.png"
+import awardNrtf2 from "../../Assets/nrtf2.png";
+import awardBtcmp0 from "../../Assets/bootcamp0.png";
+import awardBtcmp1 from "../../Assets/bootcamp1.png";
+import awardBtcmp2 from "../../Assets/bootcamp2.png";
+import awardBtcmp3 from "../../Assets/bootcamp3.png";
+
 
 // Blog-like awards data
 const awardsData = {
@@ -21,12 +27,14 @@ const awardsData = {
     title: "IEEE R8 Industrial Bootcamp",
     place: "1st Place",
     year: "2025",
-    problematique: `Traditional agriculture relies heavily on water, pesticides, and
-    manual monitoring, which makes it inefficient and unsustainable.`,
-    solution: `We designed a smart agriculture system combining aeroponics,
+    hackathonOverview: `The Industrial Bootcamp 4.0, organized by the IEEE INSAT IAS Chapter, is a prestigious event that brings together students to develop innovative solutions to real-life problems using Industry 5.0 technologies. The hackathon challenges participants to create solutions that align with themes such as Smart Agriculture, Electric Mobility, and Smart Banking & Sustainable Industry.`,
+    problemStatement: `Traditional agriculture relies heavily on water, pesticides, and manual monitoring, which makes it inefficient and unsustainable.`,
+    ourSolution: `We designed a smart agriculture system combining aeroponics,
     bioengineered microbial nutrients, IoT sensors, ultrasonic pest control,
     and AI-powered crop monitoring. Projected ROI: 128.57%.`,
-    images: [awardImage1, awardImage1],
+    impact: `Our solution addresses critical global challenges by promoting sustainable farming practices, reducing water and land usage, and minimizing the carbon footprint. It offers a scalable and cost-effective solution that can be adapted to various environments, from urban rooftops to rural farms. By integrating renewable energy and eco-friendly practices, our system contributes to a greener and more sustainable future.`,
+    images: [awardBtcmp1, awardBtcmp3, awardBtcmp2],
+    solutionImage: awardBtcmp0,
   },
   "nrtf-2024": {
     title: "NRTF Hackathon",
@@ -40,7 +48,7 @@ const awardsData = {
     - AI-Driven Energy Management: Predicting daily energy consumption and optimizing maintenance schedules to ensure reliability and cost-effectiveness.
     - User-Friendly Dashboard: Providing real-time monitoring and control of the energy system, accessible via a web interface.`,
     impact: `Our solution aims to provide reliable, sustainable, and affordable energy to rural communities, addressing the critical need for equitable energy access. By integrating renewable energy sources with advanced AI, we can significantly reduce energy costs and environmental impact while promoting local economic development.`,
-    images: [awardNrtf1, awardNrtf2]
+    images: [awardNrtf1, awardNrtf2],
   },
 };
 
@@ -60,7 +68,7 @@ function AwardDetail() {
 
       {/* Hackathon Overview */}
       <section className="mt-5">
-        <h3 className="purple" style={{textAlign: "left" }}>Hackathon Overview:</h3>
+        <h3 className="purple" style={{ textAlign: "left" }}>Hackathon Overview:</h3>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
           {award.hackathonOverview}
         </p>
@@ -68,7 +76,7 @@ function AwardDetail() {
 
       {/* Problem Statement */}
       <section className="mt-4">
-        <h3 className="purple" style={{textAlign: "left" }}>Problem Statement:</h3>
+        <h3 className="purple" style={{ textAlign: "left" }}>Problem Statement:</h3>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
           {award.problemStatement}
         </p>
@@ -76,15 +84,33 @@ function AwardDetail() {
 
       {/* Our Solution */}
       <section className="mt-4">
-        <h3 className="purple" style={{textAlign: "left" }}>Our Solution:</h3>
+        <h3 className="purple" style={{ textAlign: "left" }}>Our Solution:</h3>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
           {award.ourSolution}
         </p>
       </section>
+      {award.solutionImage &&
+        <section className="mt-5">
+          <Row className="justify-content-center">
 
+            <Col md={6} sm={8} xs={12} className="mb-4 d-flex justify-content-center">
+              <img
+                src={award.solutionImage}
+                alt={`Award `}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                }}
+              />
+            </Col>
+
+          </Row>
+        </section>
+      }
       {/* Impact */}
       <section className="mt-4">
-        <h3 className="purple" style={{textAlign: "left" }}>Impact:</h3>
+        <h3 className="purple" style={{ textAlign: "left" }}>Impact:</h3>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
           {award.impact}
         </p>
@@ -93,15 +119,15 @@ function AwardDetail() {
       {/* Images grid */}
       {award.images && award.images.length > 0 && (
         <section className="mt-5">
-          <Row>
+          <Row className="justify-content-center">
             {award.images.map((img, idx) => (
-              <Col md={4} sm={6} xs={12} key={idx} className="mb-3">
+              <Col md={6} sm={8} xs={12} key={idx} className="mb-4 d-flex justify-content-center">
                 <img
                   src={img}
                   alt={`Award ${idx}`}
                   style={{
                     width: "100%",
-                    height: "200px",
+                    height: "auto",
                     objectFit: "cover",
                   }}
                 />

@@ -1,6 +1,7 @@
 import { Container, Row, Col} from "react-bootstrap";
 import Particle from "../Particle";
 // import awardImage1 from "../../Assets/Projects/car-finder.png";
+import awardImage3 from "../../Assets/orbit_pic.png";
 import awardImage2 from "../../Assets/bootcamp_pic.jpg";
 import awardImage1 from "../../Assets/nrtf_pic.jpeg";
 import AwardCard from "./AwardCards";
@@ -13,7 +14,7 @@ function Awards() {
       place: "2nd place",
       year: "2025",
       shortDesc: "EcoAI-Train: AI sustainability platform.",
-      imageSrc: awardImage2,
+      imageSrc: awardImage3,
     },
     {
       id: "bootcamp-2025",
