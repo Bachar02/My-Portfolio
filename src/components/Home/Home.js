@@ -40,8 +40,20 @@ function Home() {
             </Col>
           </Row>
         </Container>
+        {/* Scroll Animation Section */}
+        <div className="col-12 mt-5">
+          <div className="d-flex justify-content-center">
+            <div className="mouse-scroll">
+              <div className="mouse">
+                <div className="wheel"></div>
+              </div>
+              <div className="arrow"></div>
+            </div>
+          </div>
+        </div>
       </Container>
-      {/* <Home2 /> */}
+
+
       <Home3 />
     </section>
   );
