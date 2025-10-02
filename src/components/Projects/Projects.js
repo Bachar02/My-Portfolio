@@ -99,6 +99,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import turboFanImage from "../../Assets/pfaa.png";
 
 function Projects() {
   const projects = [
@@ -107,7 +108,7 @@ function Projects() {
       title: "Turbofan RUL Predictor",
       description:
         "A predictive maintenance project using LSTM networks to estimate the Remaining Useful Life (RUL) of engines based on sensor/time series data.",
-      imageSrc: "/images/projects/pfaa.png", // Placeholder image, update it with the correct one
+      imageSrc: turboFanImage, // Placeholder image, update it with the correct one
       ghLink: "https://github.com/Bachar02/PFA",
     },
     {
