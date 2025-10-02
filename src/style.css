@@ -551,6 +551,45 @@ button:focus {
   padding-top: 10px !important;
 }
 
+.project-card img {
+  width: 100%;
+  height: 320px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(53, 100, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(72, 120, 144, 0.561) !important;
+}
+
+.project-card-view .text-muted {
+  font-size: 14px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
 /* --------- */
 /* About */
 /* --------- */
