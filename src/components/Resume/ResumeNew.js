@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import React from "react";
+import { Container, Row, Button } from "react-bootstrap";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/bachar bouguerra zina's resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
+
+import pdf from "../../Assets/../Assets/bachar bouguerra zina's resume.pdf";
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+
+        <Row style={{ justifyContent: "center", position: "relative", marginBottom: "20px" }}>
           <Button
             variant="primary"
             href={pdf}
@@ -31,13 +30,15 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+        <Row style={{ justifyContent: "center" }}>
+          <div style={{ height: "800px", width: "80%" }}>
+            <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
+              <Viewer fileUrl={pdf} plugins={[defaultLayoutPluginInstance]} />
+            </Worker>
+          </div>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
           <Button
             variant="primary"
             href={pdf}
