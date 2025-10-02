@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import awardImage1 from "../../Assets/Projects/car-finder.png";
+import awardNrtf1 from "../../Assets/nrtf1.png";
+import awardNrtf2 from "../../Assets/nrtf2.png"
 
 // Blog-like awards data
 const awardsData = {
@@ -30,11 +32,15 @@ const awardsData = {
     title: "NRTF Hackathon",
     place: "1st Place",
     year: "2024",
-    problematique: `Urban areas without electricity face major challenges
-    in healthcare, education, and quality of life.`,
-    solution: `We created mobile solar panels and an AI-controlled turbine
-    to supply clean, reliable electricity to underserved communities.`,
-    images: [awardImage1, awardImage1, awardImage1],
+    hackathonOverview: `The NRTF Hackathon is a prestigious two-day competition focused on Green Innovation, aimed at discovering innovative solutions to address energy management challenges. The theme for this year was "Energy Management," with a focus on enhancing energy efficiency, optimizing energy use, and promoting sustainable practices.`,
+    problemStatement: `Access to electricity in rural areas remains a significant challenge, leading to socio-economic disparities between urban and rural regions. Nearly two billion people in developing countries lack access to modern energy services, with a particular emphasis on Africa, where 30 out of 49 least developed countries face this issue.`,
+    ourSolution: `Our team proposed the "Dhawwini Smart Hybrid Farm," an integrated energy solution combining solar and wind power with intelligent energy management systems. Key features of our solution include:
+    - Smart Solar Panels: Equipped with trackers that follow the sun’s movement, maximizing energy capture and efficiency.
+    - Smart Wind Turbines: Utilizing real-time wind data to optimize performance and reduce maintenance costs.
+    - AI-Driven Energy Management: Predicting daily energy consumption and optimizing maintenance schedules to ensure reliability and cost-effectiveness.
+    - User-Friendly Dashboard: Providing real-time monitoring and control of the energy system, accessible via a web interface.`,
+    impact: `Our solution aims to provide reliable, sustainable, and affordable energy to rural communities, addressing the critical need for equitable energy access. By integrating renewable energy sources with advanced AI, we can significantly reduce energy costs and environmental impact while promoting local economic development.`,
+    images: [awardNrtf1, awardNrtf2]
   },
 };
 
@@ -52,19 +58,35 @@ function AwardDetail() {
         {award.year} · {award.place}
       </p>
 
-      {/* Problematic */}
+      {/* Hackathon Overview */}
       <section className="mt-5">
-        <h3 className="purple" style={{textAlign: "left" }}>Problematique:</h3>
+        <h3 className="purple" style={{textAlign: "left" }}>Hackathon Overview:</h3>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
-          {award.problematique}
+          {award.hackathonOverview}
         </p>
       </section>
 
-      {/* Solution */}
+      {/* Problem Statement */}
       <section className="mt-4">
-        <h3 className="purple" style={{textAlign: "left" }}>Solution:</h3>
+        <h3 className="purple" style={{textAlign: "left" }}>Problem Statement:</h3>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
-          {award.solution}
+          {award.problemStatement}
+        </p>
+      </section>
+
+      {/* Our Solution */}
+      <section className="mt-4">
+        <h3 className="purple" style={{textAlign: "left" }}>Our Solution:</h3>
+        <p style={{ fontSize: "18px", textAlign: "left" }}>
+          {award.ourSolution}
+        </p>
+      </section>
+
+      {/* Impact */}
+      <section className="mt-4">
+        <h3 className="purple" style={{textAlign: "left" }}>Impact:</h3>
+        <p style={{ fontSize: "18px", textAlign: "left" }}>
+          {award.impact}
         </p>
       </section>
 

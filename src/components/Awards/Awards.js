@@ -1,7 +1,8 @@
 import { Container, Row, Col} from "react-bootstrap";
 import Particle from "../Particle";
 // import awardImage1 from "../../Assets/Projects/car-finder.png";
-import awardImage2 from "../../Assets/about.png";
+import awardImage2 from "../../Assets/bootcamp_pic.jpg";
+import awardImage1 from "../../Assets/nrtf_pic.jpeg";
 import AwardCard from "./AwardCards";
 
 function Awards() {
@@ -28,7 +29,7 @@ function Awards() {
       place: "1st place",
       year: "2024",
       shortDesc: "AI-controlled turbine & solar panels for urban areas.",
-      imageSrc: awardImage2,
+      imageSrc: awardImage1,
     },
   ];
 
