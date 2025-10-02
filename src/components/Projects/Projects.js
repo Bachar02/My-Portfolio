@@ -100,6 +100,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import turboFanImage from "../../Assets/pfaa.png";
+import carFinderImage from "../../Assets/car-finder.png";
+import videoControllerImage from "../../Assets/video-controller.png";
+import aiInterviewerImage from "../../Assets/ai_interviewer.png";
+import fractureDetectionImage from "../../Assets/ppp.png";
 
 function Projects() {
   const projects = [
@@ -116,7 +120,7 @@ function Projects() {
       title: "Car-Finder NLP Search",
       description:
         "An AI-powered search interface: users ask questions in plain English/French, which are converted to SQL queries to fetch relevant car records from a database.",
-      imageSrc: "/images/Projects/car-finder.png", // Placeholder image, update it with the correct one
+      imageSrc: carFinderImage, // Placeholder image, update it with the correct one
       ghLink: "https://github.com/Bachar02/Car-Finder",
       demoLink: "https://youtu.be/k3XL7SHVq5Y"
     },
@@ -125,7 +129,7 @@ function Projects() {
       title: "AI Video Controller",
       description:
         "A system that lets users control video playback (play, pause, skip, etc.) via hand gestures. Built with OpenCV, MediaPipe, and Python.",
-      imageSrc: "/images/projects/video-controller.png", // Placeholder image, update it with the correct one
+      imageSrc: videoControllerImage, // Placeholder image, update it with the correct one
       ghLink: "https://github.com/Bachar02/AI-Video-Controller",
       demoLink: "https://youtu.be/ztt1S-k1kA0"
     },
@@ -134,7 +138,7 @@ function Projects() {
       title: "Virtual Interviewer",
       description:
         "A tool that lets you upload a resume and job description; it then simulates interview questions or feedback tailored to that role.",
-      imageSrc: "/images/projects/ai_interviewer.png", // Placeholder image, update it with the correct one
+      imageSrc: aiInterviewerImage, // Placeholder image, update it with the correct one
       ghLink: "https://github.com/Bachar02/Virtual-Interviewer",
     },
     {
@@ -142,7 +146,7 @@ function Projects() {
       title: "Fracture Detection App",
       description:
         "A mobile app (Flutter) that detects fractures in X-Ray images using Deep Learning techniques.",
-      imageSrc: "/images/projects/ppp.png", // Placeholder image, update it with the correct one
+      imageSrc: fractureDetectionImage, // Placeholder image, update it with the correct one
       ghLink: "https://github.com/Bachar02/flutter-fracture-detector-app-ppp",
       demoLink: "https://youtu.be/PtJf9Yd-56A"
     },
