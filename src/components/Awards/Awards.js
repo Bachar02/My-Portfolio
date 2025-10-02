@@ -1,7 +1,7 @@
 import { Container, Row, Col} from "react-bootstrap";
 import Particle from "../Particle";
 // import awardImage1 from "../../Assets/Projects/car-finder.png";
-import awardImage3 from "../../Assets/orbit_pic.png";
+import awardImage3 from "../../Assets/orbit1.jpg";
 import awardImage2 from "../../Assets/bootcamp_pic.jpg";
 import awardImage1 from "../../Assets/nrtf_pic.jpeg";
 import AwardCard from "./AwardCards";
