@@ -41,7 +41,7 @@ function Home() {
           </Row>
         </Container>
         {/* Scroll Animation Section */}
-        <div className="col-12 mt-5">
+        {/* <div className="col-12 mt-5">
           <div className="d-flex justify-content-center">
             <div className="mouse-scroll">
               <div className="mouse">
@@ -50,7 +50,7 @@ function Home() {
               <div className="arrow"></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Container>
 
 
