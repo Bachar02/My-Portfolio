@@ -1,9 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import myImg from "../../Assets/avatar2.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { ImPointRight } from "react-icons/im";
+import Techstack from "../About/Techstack";
+import Toolstack from "../About/Toolstack";
+import Github from "../About/Github";
 
 function Home3() {
   return (
@@ -56,19 +60,60 @@ function Home3() {
               and I'm comfortable with <b className="purple">C & Java</b>.
               <br />
               <br />
-              Highlights:
-              <br />
-              1st Place — IEEE Region 8 Industrial Bootcamp 4.0
-              <br />
-              1st Place — NRTF Hackathon
-              <br />
-              2nd Place — Orbit 1.0 Ideathon
+
             </p>
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col md={12}>
+            <Card className="quote-card-view">
+              <Card.Body>
+                <blockquote className="blockquote mb-0">
+
+                  When the cursor isn't blinking I'm usually:
+                  <ul>
+                    <li className="about-activity">
+                      <ImPointRight /> Scraping public datasets to see what actually trains.
+                    </li>
+                    <li className="about-activity">
+                      <ImPointRight /> 24-hour hackathons—because sleep is just an
+                      under-regularized parameter
+                    </li>
+                    <li className="about-activity">
+                      <ImPointRight /> Gym, football, running—anything that keeps the step-count higher than the screen-time.
+                    </li>
+                  </ul>
+
+                  <p style={{ color: "rgb(123 163 192)" }}>
+                    "If it compiles on the first try, it probably isn't interesting."
+                  </p>
+                  <footer className="blockquote-footer">محمد العابد</footer>
+                </blockquote>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} style={{ color: "white", paddingTop: "20px" }}>
+            <h1 className="project-heading">
+              Professional <strong className="purple">Skillset </strong>
+            </h1>
+
+            <Techstack />
+
+            <h1 className="project-heading">
+              <strong className="purple">Tools</strong> I use
+            </h1>
+            <Toolstack />
+
+            <Github />
           </Col>
         </Row>
 
@@ -105,7 +150,7 @@ function Home3() {
           </Col>
         </Row>
       </Container>
-    </Container>
+    </Container >
   );
 }
 

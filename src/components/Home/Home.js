@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main2.png";
 import Particle from "../Particle";
 import Home3 from "./Home3";
 import Type from "./Type";
+import AboutCard from "../About/AboutCard";
 
 function Home() {
   return (
@@ -40,20 +41,8 @@ function Home() {
             </Col>
           </Row>
         </Container>
-        {/* Scroll Animation Section */}
-        {/* <div className="col-12 mt-5">
-          <div className="d-flex justify-content-center">
-            <div className="mouse-scroll">
-              <div className="mouse">
-                <div className="wheel"></div>
-              </div>
-              <div className="arrow"></div>
-            </div>
-          </div>
-        </div> */}
+
       </Container>
-
-
       <Home3 />
     </section>
   );
