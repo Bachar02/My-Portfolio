@@ -160,7 +160,3 @@ Portfolio/
 ### Show Your Support
 
 Give a ⭐ if you like this portfolio!
-
----
-
-Let me know if you need any more adjustments!
