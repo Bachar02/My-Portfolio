@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This website showcases my professional experience, technical skills, and projects. Built with modern web technologies, it features a clean, responsive design with smooth animations and an intuitive user interface.
 
+Visit it: https://my-portfolio-git-master-bachar02s-projects.vercel.app/
+
 ### Key Highlights
 
 * **Professional Experience Section**: Interactive cards displaying my internships, awards and work history with detailed descriptions
