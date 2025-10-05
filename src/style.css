@@ -326,6 +326,53 @@ button:focus {
   margin-top: 8px;
 }
 
+.experience-section {
+  margin-bottom: 20px;
+}
+
+.experience-card {
+  box-shadow: 0 4px 5px 3px rgba(53, 100, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a83db;
+}
+
+.experience-card .card-subtitle {
+  font-size: 1.2rem;
+  text-align: left; /* Align text to the left */
+}
+
+.experience-card .card-text {
+  font-size: 1rem;
+  text-align: left; /* Align text to the left */
+}
+
+.experience-description {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.experience-description li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 15px;
+  }
+}
+
 /* Scroll animation */
 @keyframes scroll {
   0% {
@@ -681,6 +728,18 @@ button:focus {
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: gives a nice overlay effect */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-content h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
 
 .tech-icons {
   font-size: 4.5em !important;

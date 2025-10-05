@@ -4,7 +4,6 @@ import homeLogo from "../../Assets/home-main2.png";
 import Particle from "../Particle";
 import Home3 from "./Home3";
 import Type from "./Type";
-import AboutCard from "../About/AboutCard";
 
 function Home() {
   return (
