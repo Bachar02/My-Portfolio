@@ -1,34 +1,3 @@
-Here’s an updated **README** file based on the information you provided:
-
----
-
-<h2 align="center">
-  Personal Portfolio Website<br/>
-  <a href="https://my-portfolio-git-master-bachar02s-projects.vercel.app/" target="_blank">yourname.tech</a>
-</h2>
-<div align="center">
-  <img alt="Portfolio Preview" src="./Images/portfolio-preview.png" />
-</div>
-
-<br/>
-
-<center>
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)  
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)  
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
-
-</center>
-
-<h3 align="center">
-    🔹
-    <a href="YOUR_DEPLOYED_URL_HERE">View Live Demo</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/issues">Request Feature</a>
-</h3>
-
 ## About This Project
 
 Welcome to my personal portfolio! This website showcases my professional experience, technical skills, and projects. Built with modern web technologies, it features a clean, responsive design with smooth animations and an intuitive user interface.
