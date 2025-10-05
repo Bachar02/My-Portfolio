@@ -21,7 +21,7 @@ function Home3() {
             <p className="home-about-body">
               I'm <b className="purple">Bachar Bouguerra Zina</b>, an
               Industrial Instrumentation & Maintenance Engineering student at
-              <b> INSAT</b> (GPA 88/100). I love building intelligent, practical
+              <b> INSAT</b>. I love building intelligent, practical
               software—especially where <i>AI meets products</i>.
               <br />
               <br />
