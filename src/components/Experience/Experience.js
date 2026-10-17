@@ -5,25 +5,41 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
     {
-        type: " AI Engineering Intern",
+        type: "Machine Learning Researcher",
+        entreprise: "Universite Laval",
+        place: "Quebec City, Canada",
+        date: "07/2026 – 10/2026",
+        workMode: "Research",
+        description: [
+            "Developed predictive machine learning models estimating physical, chemical and biological indicators from heterogeneous spectroscopic data.",
+            "Harmonised Vis-NIR, MIR, XRF and LIBS sources into a validated database and evaluated model robustness against laboratory reference measurements.",
+            "Applied statistical quality control to detect non-conforming measurement series."
+        ],
+    },
+    {
+        type: "ML/AI Engineer",
+        entreprise: "Unisphere GmbH",
+        place: "Konstanz, Germany",
+        date: "02/2026 – 06/2026",
+        workMode: "Engineering Internship",
+        description: [
+            "Built and deployed a production RAG system with Gemini, Qdrant, chunking, embeddings, semantic search, intent filtering and conversation state management.",
+            "Built a data pipeline over 17,000 flights for time-series structuring, feature engineering, reliability scoring and monitoring dashboards.",
+            "Trained a Temporal Convolutional Network with Viterbi dynamic programming to classify flight phases while enforcing physically valid state transitions.",
+            "Derived a physics-informed power and true-airspeed model that reduced prediction error by 57% against a data-driven baseline.",
+            "Deployed FastAPI and Docker services with REST APIs, semantic caching and upstream filtering to balance latency and inference cost."
+        ],
+    },
+    {
+        type: "ML/AI Engineer Intern",
         entreprise: "YONNOV'IA",
         place: "Marseille, France",
         date: "06/2025 – 08/2025",
         workMode: "Remote",
         description: [
-            "Collaborated on the design and development of an intelligent virtual assistant integrated with the open-source ERP system, Odoo.",
-            "Evaluated, selected and integrated Large Language Models (LLMs) tailored to business needs.",
-            "Adapted and fine-tuned LLMs to meet specific business logic and user interaction requirements for the virtual assistant."
-        ],
-    },
-    {
-        type: "Robotics Instructor",
-        entreprise: "EIF Menzah 1",
-        place: "Tunis, Tunisia",
-        date: "10/2024 – 03/2025",
-        workMode: "On-site",
-        description: [
-            "Taught basic robotics and programming concepts to children aged 8–12 through interactive and hands-on sessions."
+            "Built and deployed a RAG pipeline with LangChain and Ollama for an AI assistant integrated into Odoo 17, supporting employee questions about company information, meetings and holidays.",
+            "Fine-tuned Phi-3 Mini with LoRA and 4-bit quantisation on a company GPU server, achieving over 90% accuracy with responses under 5 seconds.",
+            "Evaluated factual consistency, relevance and hallucination rate while iterating on retrieval and prompt design."
         ],
     },
     {
@@ -36,7 +52,7 @@ const experiences = [
             "Scraped real-time real estate data from French website (Leboncoin) using Python and API integrations, creating a structured dataset for analysis.",
             "Processed and cleaned scraped data using NLP techniques to prepare it for efficient retrieval and integration into the chatbot's knowledge base.",
             "Engineered an intelligent chatbot from scratch using the Rasa framework to automate user queries and provide filtered, accurate property information.",
-            "Built and fine-tuned NLP models within Rasa, defining intents, entities, and conversational flows to accurately understand and respond to user requests."
+            "Built and fine-tuned NLP models within Rasa, defining intents, entities, and conversational flows to accurately understand and respond to user requests, with approximately 80% query-conversion success."
         ],
     },
     {
@@ -46,7 +62,7 @@ const experiences = [
         date: "08/2023 – 09/2023",
         workMode: "On-site",
         description: [
-            "Worked on optimizing workflow in the logistics department by identifying and implementing improvements to enhance operational efficiency."
+            "Applied machine learning to logistics flow optimization, contributing to an approximately 20% improvement in operational efficiency."
         ],
     }
 ];

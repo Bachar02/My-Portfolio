@@ -19,46 +19,46 @@ function Home3() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm <b className="purple">Bachar Bouguerra Zina</b>, an
-              Industrial Instrumentation & Maintenance Engineering student at
-              <b> INSAT</b>. I love building intelligent, practical
-              software—especially where <i>AI meets products</i>.
+              I'm <b className="purple">Bachar Bouguerra Zina</b>, an AI
+              Engineer with an Applied AI engineering background from
+              <b> INSAT</b>. I build practical AI systems across machine
+              learning, LLM applications and backend services.
               <br />
               <br />
-              Recently, I've:
+              My recent work includes:
               <br />
               <ul>
                 <li>
-                  Built an <b className="purple">LLM-powered virtual assistant</b> integrated with
-                  <b> Odoo 17</b> (fine-tuned models + business logic).
+                  Production RAG systems using <b className="purple">Gemini,
+                  Qdrant and FastAPI</b>.
                 </li>
                 <li>
-                  Engineered a <b className="purple">Rasa</b> chatbot for real-estate data (scraping,
-                  NLP cleaning, intents/entities, flows).
+                  ML systems for <b className="purple">flight performance,
+                  phase classification and reliability scoring</b>.
                 </li>
                 <li>
-                  Predicted turbofan <b className="purple">RUL</b> on NASA C-MAPSS with <b>LSTM</b>,
-                  served via <b>Flask</b>.
+                  An Odoo 17 AI assistant using a fine-tuned <b>Phi-3 Mini</b>
+                  model with over 90% accuracy and responses under 5 seconds.
                 </li>
                 <li>
-                  Shipped a <b className="purple">Flutter</b> app for on-device fracture
-                  classification using <b>TFLite</b>.
+                  Predictive modeling on heterogeneous spectroscopic data at
+                  <b> Universite Laval</b>.
                 </li>
               </ul>
               <br />
-              I'm into building new{" "}
-              <b className="purple">AI/ML features, agents, and developer tools</b> — from
-              <i> NLP & Computer Vision</i> to <i>predictive modeling</i> and
-              automation.
+              I work with <b className="purple">Python, Java, SQL, PyTorch,
+              TensorFlow, scikit-learn, Pandas, NumPy, SciPy, LangChain,
+              Qdrant, FastAPI, Flask and Docker</b>, and I am comfortable taking
+              models from data processing through deployment and evaluation.
+              My focus includes LLM deployment, RAG, embeddings, vector search,
+              fine-tuning, agentic orchestration and industrial predictive
+              maintenance.
               <br />
               <br />
-              I usually work with{" "}
-              <b className="purple">
-                Python, TensorFlow/Keras, PyTorch, scikit-learn, Pandas, NumPy,
-                Flask, Docker, Rasa, SQL, Flutter(Dart)
-              </b>{" "}
-              and I'm comfortable with <b className="purple">C & Java</b>.
+              <b>Education:</b> Engineering Degree in Applied Artificial
+              Intelligence, INSAT (Graduated 2026).
               <br />
+              <b>Languages:</b> English and French (fluent), Arabic (native).
               <br />
 
             </p>
@@ -77,24 +77,23 @@ function Home3() {
               <Card.Body>
                 <blockquote className="blockquote mb-0">
 
-                  When the cursor isn't blinking I'm usually:
+                  Areas I work on:
                   <ul>
                     <li className="about-activity">
-                      <ImPointRight /> Scraping public datasets to see what actually trains.
+                      <ImPointRight /> LLM applications, RAG pipelines and agentic AI.
                     </li>
                     <li className="about-activity">
-                      <ImPointRight /> 24-hour hackathons—because sleep is just an
-                      under-regularized parameter
+                      <ImPointRight /> Predictive modeling for industrial and scientific data.
                     </li>
                     <li className="about-activity">
-                      <ImPointRight /> Gym, football, running—anything that keeps the step-count higher than the screen-time.
+                      <ImPointRight /> Backend APIs and production ML systems.
                     </li>
                   </ul>
 
                   <p style={{ color: "rgb(123 163 192)" }}>
-                    "If it compiles on the first try, it probably isn't interesting."
+                    Certifications: NVIDIA Building RAG Agents, Coursera Machine Learning Specialization,
+                    DataCamp Generative AI and Prompt Engineering, NVIDIA Computer Vision for Industrial Inspection.
                   </p>
-                  <footer className="blockquote-footer">محمد العابد</footer>
                 </blockquote>
               </Card.Body>
             </Card>

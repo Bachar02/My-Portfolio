@@ -10,26 +10,26 @@ function Awards() {
   const awards = [
     {
       id: "orbit-2025",
-      title: "IEEE CS INSAT Orbit 1.0 Ideathon",
+      title: "EcoAI-Train — IEEE CS INSAT Orbit 1.0",
       place: "2nd place",
       year: "2025",
-      shortDesc: "EcoAI-Train: AI sustainability platform.",
+      shortDesc: "2nd place for EcoAI-Train.",
       imageSrc: awardImage3,
     },
     {
       id: "bootcamp-2025",
-      title: "IEEE R8 Industrial Bootcamp",
+      title: "AIgroFarm — IEEE Region 8 Industrial Bootcamp / IEEE INSAT IAS",
       place: "1st place",
       year: "2025",
-      shortDesc: "Sustainable agriculture with aeroponics + AI.",
+      shortDesc: "1st place for AIgroFarm.",
       imageSrc: awardImage2,
     },
     {
       id: "nrtf-2024",
-      title: "NRTF Hackathon",
+      title: "Dhawwini — Re-Tech Fusion",
       place: "1st place",
-      year: "2024",
-      shortDesc: "AI-controlled turbine & solar panels for urban areas.",
+      year: "",
+      shortDesc: "1st place for Dhawwini.",
       imageSrc: awardImage1,
     },
   ];

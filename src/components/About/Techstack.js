@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiPython, DiGit, DiJava } from "react-icons/di";
-import { SiTensorflow, SiPytorch, SiScikitlearn, SiFlask, SiDocker, SiRasa, SiFlutter, SiKeras, SiPostgresql } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { SiTensorflow, SiPytorch, SiScikitlearn, SiFlask, SiDocker, SiRasa, SiPostgresql } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -12,9 +11,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
@@ -33,12 +29,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRasa />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFlutter />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKeras />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />

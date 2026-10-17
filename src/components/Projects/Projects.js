@@ -7,51 +7,60 @@ import carFinderImage from "../../Assets/car-finder.png";
 import videoControllerImage from "../../Assets/video-controller.png";
 import aiInterviewerImage from "../../Assets/ai_interviewer.png";
 import fractureDetectionImage from "../../Assets/ppp.png";
+import ragImage from "../../Assets/Gemini_Generated_Image_ic1664ic1664ic16.png";
 
 function Projects() {
   const projects = [
     {
-      id: "34982216-3bc2-44c2-9f71-7e82bc03a6dc",
-      title: "Turbofan RUL Predictor",
+      id: "drone-performance-models",
+      title: "AI-Assisted Drone Performance Models",
       description:
-        "A predictive maintenance project using LSTM networks to estimate the Remaining Useful Life (RUL) of engines based on sensor/time series data.",
-      imageSrc: turboFanImage, // Placeholder image, update it with the correct one
+        "AI-assisted models for drone mission planning and flight simulation, including telemetry processing, energy and consumption modeling, phase-based performance curves, reliability scoring and production JSON artifacts.",
+      imageSrc: turboFanImage,
+    },
+    {
+      id: "odoo-ai-assistant",
+      title: "Odoo AI Assistant",
+      description:
+        "An AI assistant integrated into Odoo 17 using a fine-tuned Phi-3 Mini model, supporting employee questions about company information, meetings and holidays with over 90% accuracy and responses under 5 seconds.",
+      imageSrc: aiInterviewerImage,
+    },
+    {
+      id: "agricultural-predictive-modeling",
+      title: "Agricultural Predictive Modeling",
+      description:
+        "Machine learning models for predicting agronomic response and delta Y from agricultural data.",
+      imageSrc: videoControllerImage,
+    },
+    {
+      id: "nasa-turbofan-rul",
+      title: "NASA Turbofan RUL Predictor",
+      description:
+        "An LSTM-based Remaining Useful Life prediction model for multivariate industrial sensor time series from NASA C-MAPSS.",
+      imageSrc: turboFanImage,
       ghLink: "https://github.com/Bachar02/PFA",
     },
     {
-      id: "ac440a35-d25d-45d5-b0ab-114bfca1e2ad",
-      title: "Car-Finder NLP Search",
+      id: "tunisian-history-rag",
+      title: "Tunisian History RAG",
       description:
-        "An AI-powered search interface: users ask questions in plain English/French, which are converted to SQL queries to fetch relevant car records from a database.",
-      imageSrc: carFinderImage, // Placeholder image, update it with the correct one
+        "A retrieval-augmented generation system using document embeddings, FAISS vector search and large language models.",
+      imageSrc: ragImage,
+    },
+    {
+      id: "quran-recitation-companion",
+      title: "Quran Recitation Companion",
+      description:
+        "An AI-assisted application for tracking and supporting Quran recitation.",
+      imageSrc: fractureDetectionImage,
+    },
+    {
+      id: "car-finder",
+      title: "Car-Finder LLM to SQL",
+      description:
+        "An LLM engine that converts natural language questions into schema-compliant SQL queries with rule-based schema validation.",
+      imageSrc: carFinderImage,
       ghLink: "https://github.com/Bachar02/Car-Finder",
-      demoLink: "https://youtu.be/k3XL7SHVq5Y"
-    },
-    {
-      id: "3d7f5c6e-d4c6-47b4-b649-735dbd0808cf",
-      title: "AI Video Controller",
-      description:
-        "A system that lets users control video playback (play, pause, skip, etc.) via hand gestures. Built with OpenCV, MediaPipe, and Python.",
-      imageSrc: videoControllerImage, // Placeholder image, update it with the correct one
-      ghLink: "https://github.com/Bachar02/AI-Video-Controller",
-      demoLink: "https://youtu.be/ztt1S-k1kA0"
-    },
-    {
-      id: "bfdfdf3a-081d-45be-b299-c019bf42f791",
-      title: "Virtual Interviewer",
-      description:
-        "A tool that lets you upload a resume and job description; it then simulates interview questions or feedback tailored to that role.",
-      imageSrc: aiInterviewerImage, // Placeholder image, update it with the correct one
-      ghLink: "https://github.com/Bachar02/Virtual-Interviewer",
-    },
-    {
-      id: "49d2d503-155b-4f37-b54c-8eac998d632e",
-      title: "Fracture Detection App",
-      description:
-        "A mobile app (Flutter) that detects fractures in X-Ray images using Deep Learning techniques.",
-      imageSrc: fractureDetectionImage, // Placeholder image, update it with the correct one
-      ghLink: "https://github.com/Bachar02/flutter-fracture-detector-app-ppp",
-      demoLink: "https://youtu.be/PtJf9Yd-56A"
     },
   ];
 
