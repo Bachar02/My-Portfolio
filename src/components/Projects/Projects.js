@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import turboFanImage from "../../Assets/pfaa.png";
 import carFinderImage from "../../Assets/car-finder.png";
+import aiInterviewerImage from "../../Assets/ai_interviewer.png";
 import fractureDetectionImage from "../../Assets/ppp.png";
 import hannibalImage from "../../Assets/hannibal.jpg";
 
@@ -38,6 +39,23 @@ function Projects() {
         "An LLM engine that converts natural language questions into schema-compliant SQL queries with rule-based schema validation.",
       imageSrc: carFinderImage,
       ghLink: "https://github.com/Bachar02/Car-Finder",
+    },
+    {
+      id: "virtual-interviewer",
+      title: "Virtual Interviewer",
+      description:
+        "A tool that lets you upload a resume and job description; it then simulates interview questions or feedback tailored to that role.",
+      imageSrc: aiInterviewerImage,
+      ghLink: "https://github.com/Bachar02/Virtual-Interviewer",
+    },
+    {
+      id: "fracture-detection-app",
+      title: "Fracture Detection App",
+      description:
+        "A mobile app (Flutter) that detects fractures in X-Ray images using Deep Learning techniques.",
+      imageSrc: fractureDetectionImage,
+      ghLink: "https://github.com/Bachar02/flutter-fracture-detector-app-ppp",
+      demoLink: "https://youtu.be/PtJf9Yd-56A",
     },
   ];
 
