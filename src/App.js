@@ -18,6 +18,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Awards from "./components/Awards/Awards";
 import AwardDetail from "./components/Awards/AwardDetail";
 import Experience from "./components/Experience/Experience.js";
+import Services from "./components/Services/Services";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/awards" element={<Awards/>} />
           <Route path="/awards/:id" element={<AwardDetail/>} />
           <Route path="/resume" element={<Resume />} />
