@@ -45,7 +45,7 @@ const awardsData = {
   "nrtf-2024": {
     title: "Dhawwini — Re-Tech Fusion",
     place: "1st Place",
-    year: "",
+    year: "2024",
     hackathonOverview: `The NRTF Hackathon is a prestigious two-day competition focused on Green Innovation, aimed at discovering innovative solutions to address energy management challenges. The theme for this year was "Energy Management," with a focus on enhancing energy efficiency, optimizing energy use, and promoting sustainable practices.`,
     problemStatement: `Access to electricity in rural areas remains a significant challenge, leading to socio-economic disparities between urban and rural regions. Nearly two billion people in developing countries lack access to modern energy services, with a particular emphasis on Africa, where 30 out of 49 least developed countries face this issue.`,
     ourSolution: (

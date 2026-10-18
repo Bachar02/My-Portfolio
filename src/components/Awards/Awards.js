@@ -28,7 +28,7 @@ function Awards() {
       id: "nrtf-2024",
       title: "Dhawwini — Re-Tech Fusion",
       place: "1st place",
-      year: "",
+      year: "2024",
       shortDesc: "1st place for Dhawwini.",
       imageSrc: awardImage1,
     },
