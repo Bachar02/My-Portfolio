@@ -110,7 +110,7 @@ function Services() {
             <h3>
               Have a project in <strong className="purple">mind</strong>?
             </h3>
-            <p>Tell me about your problem and let's see how AI can solve it.</p>
+            <p>Tell me about your problem and let's discuss it.</p>
             <Button
               variant="primary"
               href="mailto:bachar.bouguerrazina@insat.ucar.tn"
