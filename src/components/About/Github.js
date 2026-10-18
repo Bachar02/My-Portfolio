@@ -14,7 +14,7 @@ function Github() {
         blockMargin={5}
         color="#4a9eff"
         fontSize={16}
-        year={2025} 
+        year="last"
       />
     </Row>
   );
