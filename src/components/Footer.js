@@ -40,7 +40,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="mailto:bachar.bouguerrazina@insat.ucar.tn" 
+                href="mailto:bouguerrabachar2@gmail.com" 
                 style={{ color: "white" }}
               >
                 <MdEmail />

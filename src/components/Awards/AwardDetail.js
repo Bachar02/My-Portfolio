@@ -13,10 +13,10 @@ const awardsData = {
     title: "EcoAI-Train — IEEE CS INSAT Orbit 1.0",
     place: "2nd Place",
     year: "2025",
-    hackathonOverview: `EcoAI-Train — 2nd place, IEEE CS INSAT Orbit 1.0.`,
-    problemStatement: "",
-    ourSolution: "",
-    impact: "",
+    hackathonOverview: `The IEEE CS INSAT Orbit 1.0 Ideathon is a prestigious event that brings together students and professionals to develop innovative solutions for sustainable technology. The theme for this year was "AI for Good," focusing on reducing the environmental impact of AI development.`,
+    problemStatement: `Training large AI models like GPT-4 or DALL·E consumes massive amounts of energy, sometimes emitting as much carbon as thousands of cars running for a year. Up to 70% of that energy is wasted due to inefficient scheduling and hardware usage.`,
+    ourSolution: `EcoAI-Train is a platform that empowers AI teams to track, optimize, and cut down energy waste during model training. Key features include: - Real-time energy tracking - AI-driven scheduling optimization - Waste reduction and efficiency improvements`,
+    impact: `Reduces energy consumption and carbon emissions in AI model training. Promotes sustainable AI development practices. Contributes to a greener and more sustainable future.`,
     images: [
     ],
     videoUrl: orbitDemo,
@@ -25,10 +25,20 @@ const awardsData = {
     title: "AIgroFarm — IEEE Region 8 Industrial Bootcamp / IEEE INSAT IAS",
     place: "1st Place",
     year: "2025",
-    hackathonOverview: `AIgroFarm — 1st place, IEEE Region 8 Industrial Bootcamp / IEEE INSAT IAS.`,
-    problemStatement: "",
-    ourSolution: "",
-    impact: "",
+    hackathonOverview: `The Industrial Bootcamp 4.0, organized by the IEEE INSAT IAS Chapter, is a prestigious event that brings together students to develop innovative solutions to real-life problems using Industry 5.0 technologies. The hackathon challenges participants to create solutions that align with themes such as Smart Agriculture, Electric Mobility, and Smart Banking & Sustainable Industry.`,
+    problemStatement: `Traditional agriculture relies heavily on water, pesticides, and manual monitoring, which makes it inefficient and unsustainable.`,
+    ourSolution: (
+      <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
+        We designed a smart agriculture system that includes:
+        <li>Aeroponics</li>
+        <li>Bioengineered microbial nutrients</li>
+        <li>IoT sensors</li>
+        <li>Ultrasonic pest control</li>
+        <li>AI-powered crop monitoring</li>
+         Projected ROI: 128.57%
+      </ul>
+    ),
+    impact: `Our solution addresses critical global challenges by promoting sustainable farming practices, reducing water and land usage, and minimizing the carbon footprint. It offers a scalable and cost-effective solution that can be adapted to various environments, from urban rooftops to rural farms. By integrating renewable energy and eco-friendly practices, our system contributes to a greener and more sustainable future.`,
     //images: [awardBtcmp3, awardBtcmp2],
     solutionImage: [awardBtcmp0, awardBtcmp1],
   },
@@ -36,10 +46,18 @@ const awardsData = {
     title: "Dhawwini — Re-Tech Fusion",
     place: "1st Place",
     year: "",
-    hackathonOverview: `Dhawwini — 1st place, Re-Tech Fusion.`,
-    problemStatement: "",
-    ourSolution: "",
-    impact: "",
+    hackathonOverview: `The NRTF Hackathon is a prestigious two-day competition focused on Green Innovation, aimed at discovering innovative solutions to address energy management challenges. The theme for this year was "Energy Management," with a focus on enhancing energy efficiency, optimizing energy use, and promoting sustainable practices.`,
+    problemStatement: `Access to electricity in rural areas remains a significant challenge, leading to socio-economic disparities between urban and rural regions. Nearly two billion people in developing countries lack access to modern energy services, with a particular emphasis on Africa, where 30 out of 49 least developed countries face this issue.`,
+    ourSolution: (
+      <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
+        Our team proposed the "Dhawwini" Smart Hybrid Farm that contains:
+        <li>Smart Solar Panels: Equipped with trackers that follow the sun’s movement, maximizing energy capture and efficiency.</li>
+        <li>Smart Wind Turbines: Utilizing real-time wind data to optimize performance and reduce maintenance costs.</li>
+        <li>AI-Driven Energy Management: Predicting daily energy consumption and optimizing maintenance schedules to ensure reliability and cost-effectiveness.</li>
+        <li>User-Friendly Dashboard: Providing real-time monitoring and control of the energy system, accessible via a web interface.</li>
+      </ul>
+    ),
+    impact: `Our solution aims to provide reliable, sustainable, and affordable energy to rural communities, addressing the critical need for equitable energy access. By integrating renewable energy sources with advanced AI, we can significantly reduce energy costs and environmental impact while promoting local economic development.`,
     solutionImage: [awardNrtf1, awardNrtf2],
   },
 };

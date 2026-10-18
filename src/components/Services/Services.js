@@ -113,7 +113,7 @@ function Services() {
             <p>Tell me about your problem and let's discuss it.</p>
             <Button
               variant="primary"
-              href="mailto:bachar.bouguerrazina@insat.ucar.tn"
+              href="mailto:bouguerrabachar2@gmail.com"
               style={{ maxWidth: "250px" }}
             >
               <AiOutlineMail /> &nbsp;Get in touch
