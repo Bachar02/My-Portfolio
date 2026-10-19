@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import { CgWebsite } from "react-icons/cg";
 import orbitDemo from "../../Assets/demo_orbit.mp4";
 import awardNrtf1 from "../../Assets/nrtf1.png";
 import awardNrtf2 from "../../Assets/nrtf2.png";
@@ -20,6 +21,7 @@ const awardsData = {
     images: [
     ],
     videoUrl: orbitDemo,
+    demoLink: "https://youtu.be/ho_T5fTc-0M",
   },
   "bootcamp-2025": {
     title: "AIgroFarm — IEEE Region 8 Industrial Bootcamp / IEEE INSAT IAS",
@@ -140,6 +142,19 @@ function AwardDetail() {
             </Col>
           </Row>
         </section>
+      )}
+
+      {award.demoLink && (
+        <div className="text-center mt-2">
+          <a
+            href={award.demoLink}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            <CgWebsite /> &nbsp;Watch Demo on YouTube
+          </a>
+        </div>
       )}
 
       {/* Impact */}

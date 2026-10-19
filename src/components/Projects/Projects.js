@@ -7,6 +7,7 @@ import carFinderImage from "../../Assets/car-finder.png";
 import aiInterviewerImage from "../../Assets/ai_interviewer.png";
 import fractureDetectionImage from "../../Assets/ppp.png";
 import hannibalImage from "../../Assets/hannibal.jpg";
+import videoControllerImage from "../../Assets/video-controller.png";
 
 function Projects() {
   const projects = [
@@ -39,6 +40,7 @@ function Projects() {
         "An LLM engine that converts natural language questions into schema-compliant SQL queries with rule-based schema validation.",
       imageSrc: carFinderImage,
       ghLink: "https://github.com/Bachar02/Car-Finder",
+      demoLink: "https://youtu.be/k3XL7SHVq5Y",
     },
     {
       id: "virtual-interviewer",
@@ -56,6 +58,15 @@ function Projects() {
       imageSrc: fractureDetectionImage,
       ghLink: "https://github.com/Bachar02/flutter-fracture-detector-app-ppp",
       demoLink: "https://youtu.be/PtJf9Yd-56A",
+    },
+    {
+      id: "ai-video-controller",
+      title: "AI Video Controller",
+      description:
+        "A system that lets users control video playback (play, pause, skip, etc.) via hand gestures. Built with OpenCV, MediaPipe, and Python.",
+      imageSrc: videoControllerImage,
+      ghLink: "https://github.com/Bachar02/AI-Video-Controller",
+      demoLink: "https://youtu.be/ztt1S-k1kA0",
     },
   ];
 
