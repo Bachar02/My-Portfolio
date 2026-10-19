@@ -111,7 +111,7 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -151,6 +151,20 @@ button:focus {
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
+}
+
+/* tighter spacing on mid-size screens so "Book a call" fits */
+@media (min-width: 992px) and (max-width: 1250px) {
+  .navbar {
+    font-size: 1.05rem !important;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 0;
+  }
+  .navbar-nav .nav-link {
+    padding-right: 0.6rem !important;
+    padding-left: 0.6rem !important;
+  }
 }
 
 .navbar-nav .nav-item a {
@@ -1103,6 +1117,7 @@ button:focus {
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
+  white-space: nowrap;
 }
 
 .fork-btn-inner:hover {
