@@ -34,6 +34,8 @@ function Particle() {
           },
         },
         interactivity: {
+          // listen on window since the canvas has pointer-events: none
+          detect_on: "window",
           events: {
             onclick: {
               enable: true,

@@ -244,6 +244,8 @@ button:focus {
 }
 
 #tsparticles {
+  /* decorative background: never block clicks on page content */
+  pointer-events: none;
   position: fixed !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
