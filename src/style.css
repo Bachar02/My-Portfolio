@@ -269,7 +269,7 @@ button:focus {
 .home-section {
   /* height: 90vh !important; */
   position: relative;
-  /* 0 (not -1) so the hero buttons stay clickable; particles still sit behind content */
+  /* stacking context so the particle layer stays behind .home-content */
   z-index: 0;
   background-image: var(--image-gradient), url(./Assets/home-bg.png);
   background-position: top center;
@@ -283,6 +283,9 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  /* above the fixed #tsparticles layer so the hero buttons are clickable */
+  position: relative;
+  z-index: 1;
 }
 
 .heading {
