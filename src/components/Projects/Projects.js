@@ -8,6 +8,7 @@ import aiInterviewerImage from "../../Assets/ai_interviewer.png";
 import fractureDetectionImage from "../../Assets/ppp.png";
 import hannibalImage from "../../Assets/hannibal.jpg";
 import videoControllerImage from "../../Assets/video-controller.png";
+import quranComingSoonImage from "../../Assets/quran-coming-soon.png";
 
 function Projects() {
   const projects = [
@@ -31,7 +32,7 @@ function Projects() {
       title: "Quran Recitation Companion",
       description:
         "An AI-assisted application for tracking and supporting Quran recitation.",
-      imageSrc: fractureDetectionImage,
+      imageSrc: quranComingSoonImage,
     },
     {
       id: "car-finder",

@@ -18,51 +18,15 @@ function Home3() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              From data to <span className="purple">deployed AI</span>
             </h1>
             <p className="home-about-body">
-              I'm <b className="purple">Bachar Bouguerra Zina</b>, an AI
-              Engineer with an Applied AI engineering background from
-              <b> INSAT</b>. I build practical AI systems across machine
-              learning, LLM applications and backend services.
-              <br />
-              <br />
-              My recent work includes:
-              <br />
-              <ul>
-                <li>
-                  Production RAG systems using <b className="purple">Gemini,
-                  Qdrant and FastAPI</b>.
-                </li>
-                <li>
-                  ML systems for <b className="purple">flight performance,
-                  phase classification and reliability scoring</b>.
-                </li>
-                <li>
-                  An Odoo 17 AI assistant using a fine-tuned <b>Phi-3 Mini</b>
-                  model with over 90% accuracy and responses under 5 seconds.
-                </li>
-                <li>
-                  Predictive modeling on heterogeneous spectroscopic data at
-                  <b> Universite Laval</b>.
-                </li>
-              </ul>
-              <br />
-              I work with <b className="purple">Python, Java, SQL, PyTorch,
-              TensorFlow, scikit-learn, Pandas, NumPy, SciPy, LangChain,
-              Qdrant, FastAPI, Flask and Docker</b>, and I am comfortable taking
-              models from data processing through deployment and evaluation.
-              My focus includes LLM deployment, RAG, embeddings, vector search,
-              fine-tuning, agentic orchestration and industrial predictive
-              maintenance.
-              <br />
-              <br />
-              <b>Education:</b> Engineering Degree in Applied Artificial
-              Intelligence, INSAT (Graduated 2026).
-              <br />
-              <b>Languages:</b> English and French (fluent), Arabic (native).
-              <br />
-
+              I'm <b className="purple">Bachar</b>, an AI engineer (INSAT,
+              2026) who takes AI projects from raw data to a deployed service.
+              I've built <b className="purple">production RAG assistants,
+              fine-tuned LLMs and time-series models</b> for teams in Germany,
+              France, Canada and Tunisia, and I own the whole loop: scoping,
+              building, evaluating and shipping with FastAPI and Docker.
             </p>
 
           </Col>

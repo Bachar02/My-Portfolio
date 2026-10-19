@@ -19,31 +19,6 @@ button:focus {
 }
 
 /* --------- */
-/*  Preloader */
-/* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #0a1218;
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#preloader-none {
-  opacity: 0;
-}
-
-#no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* --------- */
 /*Scrollbar   */
 /* --------- */
 
@@ -344,8 +319,8 @@ button:focus {
 
 .tech-icons .tech-label {
   display: block;
-  font-size: 0.2em;
-  margin-top: 8px;
+  font-size: 0.32em;
+  margin-top: 6px;
   color: #c9daee;
 }
 
@@ -929,9 +904,11 @@ button:focus {
 
 
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
+  font-size: 2.6em !important;
+  flex: 0 0 auto !important;
+  width: 120px !important;
+  margin: 10px !important;
+  padding: 14px 6px 10px !important;
   opacity: 0.93 !important;
   border: 1.7px solid rgba(137, 180, 230, 0.637) !important;
   vertical-align: middle !important;
@@ -945,7 +922,8 @@ button:focus {
 
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px !important;
+    width: 96px !important;
+    margin: 6px !important;
   }
 }
 

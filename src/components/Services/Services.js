@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ServiceCard from "./ServiceCards";
 import Particle from "../Particle";
-import { FaCogs, FaRobot, FaChartLine, FaSpider, FaRocket, FaLinkedinIn } from "react-icons/fa";
-import { MdOutlineSpeed } from "react-icons/md";
+import { FaCogs, FaRobot, FaChartLine, FaRocket, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { SiCalendly } from "react-icons/si";
 import { CALENDLY_URL, LINKEDIN_URL, EMAIL } from "../../config";
@@ -47,30 +46,6 @@ function Services() {
       ],
     },
     {
-      id: "data-scraping",
-      title: "Data Collection & Web Scraping",
-      icon: FaSpider,
-      description:
-        "Clean, structured datasets gathered from websites, APIs and documents, ready for analysis or for training models.",
-      points: [
-        "Robust scrapers for websites and APIs",
-        "Cleaning, deduplication and NLP-based structuring",
-        "Scheduled pipelines delivering CSV, databases or dashboards",
-      ],
-    },
-    {
-      id: "process-optimisation",
-      title: "Process Optimisation",
-      icon: MdOutlineSpeed,
-      description:
-        "Data-driven analysis of your operations to reduce waste, delays and costs, with improvements you can measure.",
-      points: [
-        "Analyse operational data to find inefficiencies",
-        "Optimisation and simulation models to test changes safely",
-        "KPI dashboards to track the impact over time",
-      ],
-    },
-    {
       id: "ai-deployment",
       title: "AI Integration & Deployment",
       icon: FaRocket,
@@ -96,7 +71,7 @@ function Services() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {services.map((service) => (
-            <Col md={4} className="project-card" key={service.id}>
+            <Col md={6} lg={5} className="project-card" key={service.id}>
               <ServiceCard
                 icon={service.icon}
                 title={service.title}

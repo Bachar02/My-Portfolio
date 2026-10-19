@@ -4,9 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { SiCalendly } from "react-icons/si";
+import { CALENDLY_URL } from "../config";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -113,12 +113,12 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/Bachar02"
+                href={CALENDLY_URL}
                 target="_blank"
+                rel="noreferrer"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <SiCalendly style={{ marginBottom: "2px" }} /> Book a call
               </Button>
             </Nav.Item>
           </Nav>
