@@ -332,6 +332,7 @@ button:focus {
   justify-content: center;
   gap: 12px;
   margin-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .skill-category {
