@@ -8,7 +8,7 @@ import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
-import pdf from "../../Assets/../Assets/bachar bouguerra zina's resume.pdf";
+import { CV_URL as pdf } from "../../config";
 
 function ResumeNew() {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();

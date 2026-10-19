@@ -269,7 +269,8 @@ button:focus {
 .home-section {
   /* height: 90vh !important; */
   position: relative;
-  z-index: -1;
+  /* 0 (not -1) so the hero buttons stay clickable; particles still sit behind content */
+  z-index: 0;
   background-image: var(--image-gradient), url(./Assets/home-bg.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -292,6 +293,56 @@ button:focus {
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
+}
+
+.home-value-prop {
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: #d6e4f5;
+  padding-left: 50px;
+  max-width: 560px;
+}
+
+.home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.home-cta .btn {
+  min-width: 170px;
+}
+
+@media (max-width: 767px) {
+  .home-value-prop,
+  .home-cta {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.skill-category {
+  color: #9fc4ee;
+  font-size: 1.2em;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.tech-icons .tech-label {
+  display: block;
+  font-size: 0.2em;
+  margin-top: 8px;
+  color: #c9daee;
 }
 
 .mouse-scroll {

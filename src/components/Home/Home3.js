@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { SiCalendly } from "react-icons/si";
+import { CALENDLY_URL, LINKEDIN_URL } from "../../config";
 import myImg from "../../Assets/avatar2.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
@@ -146,6 +148,14 @@ function Home3() {
             <p style={{ marginTop: "1rem" }}>
               Feel free to <span className="purple">connect</span> with me
             </p>
+            <div className="contact-buttons">
+              <Button variant="primary" href={CALENDLY_URL} target="_blank" rel="noreferrer">
+                <SiCalendly /> &nbsp;Book a call
+              </Button>
+              <Button variant="outline-light" href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+                <FaLinkedinIn /> &nbsp;Message on LinkedIn
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>

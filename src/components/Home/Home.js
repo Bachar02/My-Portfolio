@@ -1,6 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { AiOutlineDownload } from "react-icons/ai";
+import { FaHandshake } from "react-icons/fa";
 import homeLogo from "../../Assets/home-main2.png";
+import { CV_URL } from "../../config";
 import Particle from "../Particle";
 import Home3 from "./Home3";
 import Type from "./Type";
@@ -25,8 +29,22 @@ function Home() {
                 <strong className="main-name"> BACHAR BOUGUERRA ZINA</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: "40px 50px 20px", textAlign: "left" }}>
                 <Type />
+              </div>
+
+              <p className="home-value-prop">
+                I build production <span className="purple">LLM and ML systems</span>,
+                from data pipeline to deployed API.
+              </p>
+
+              <div className="home-cta">
+                <Button variant="primary" href={CV_URL} download>
+                  <AiOutlineDownload /> &nbsp;Download CV
+                </Button>
+                <Button as={Link} to="/services" variant="outline-light">
+                  <FaHandshake /> &nbsp;Work with me
+                </Button>
               </div>
             </Col>
 

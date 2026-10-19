@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ServiceCard from "./ServiceCards";
 import Particle from "../Particle";
-import { FaCogs, FaRobot, FaChartLine, FaSpider, FaRocket } from "react-icons/fa";
+import { FaCogs, FaRobot, FaChartLine, FaSpider, FaRocket, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineSpeed } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
+import { SiCalendly } from "react-icons/si";
+import { CALENDLY_URL, LINKEDIN_URL, EMAIL } from "../../config";
 
 function Services() {
   const services = [
@@ -110,14 +112,18 @@ function Services() {
             <h3>
               Have a project in <strong className="purple">mind</strong>?
             </h3>
-            <p>Tell me about your problem and let's discuss it.</p>
-            <Button
-              variant="primary"
-              href="mailto:bouguerrabachar2@gmail.com"
-              style={{ maxWidth: "250px" }}
-            >
-              <AiOutlineMail /> &nbsp;Get in touch
-            </Button>
+            <p>Book a free 30-minute call, or reach out on LinkedIn or by email.</p>
+            <div className="contact-buttons">
+              <Button variant="primary" href={CALENDLY_URL} target="_blank" rel="noreferrer">
+                <SiCalendly /> &nbsp;Book a call
+              </Button>
+              <Button variant="outline-light" href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+                <FaLinkedinIn /> &nbsp;Message on LinkedIn
+              </Button>
+              <Button variant="outline-light" href={`mailto:${EMAIL}`}>
+                <AiOutlineMail /> &nbsp;Email me
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>
